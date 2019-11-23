@@ -1,7 +1,7 @@
 
 // Your code here
 function createEmployeeRecord([firstName, familyName, title, payRatePerHour]) {
-    return obj = {
+    return {
         firstName: firstName
         , familyName: familyName
         , title: title
@@ -21,7 +21,7 @@ function createEmployees(arr) {
 
 function createTimeInEvent(obj, dateStamp) {
     let date = dateStamp.split(" ")
-    timeObj = {
+   let timeObj = {
         type: "TimeIn"
         , date: date[0]
         , hour: date[1]
@@ -32,7 +32,7 @@ function createTimeInEvent(obj, dateStamp) {
 
 function createTimeOutEvent(obj, dateStamp) {
     let date = dateStamp.split(" ")
-    timeObj = {
+   let timeObj = {
         type: "TimeOut"
         , date: date[0]
         , hour: date[1]
