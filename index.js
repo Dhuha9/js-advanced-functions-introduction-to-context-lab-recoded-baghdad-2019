@@ -1,7 +1,7 @@
 
 // Your code here
 function createEmployeeRecord([firstName, familyName, title, payRatePerHour]) {
-    return obj = {
+    return {
         firstName: firstName
         , familyName: familyName
         , title: title
