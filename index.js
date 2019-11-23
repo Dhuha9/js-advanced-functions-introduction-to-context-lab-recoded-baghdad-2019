@@ -23,8 +23,8 @@ function createTimeInEvent(obj, dateStamp) {
     let date = dateStamp.split(" ")
    let timeObj = {
         type: "TimeIn"
-        , date: date[0]
-        , hour: date[1]
+        , date: parseInt(date[0])
+        , hour: parseInt(date[1])
     }
     obj.timeInEvents.push(timeObj)
     return obj
@@ -34,8 +34,8 @@ function createTimeOutEvent(obj, dateStamp) {
     let date = dateStamp.split(" ")
    let timeObj = {
         type: "TimeOut"
-        , date: date[0]
-        , hour: date[1]
+        , date: parseInt(date[0]) 
+        , hour: parseInt(date[1])
     }
     obj.timeOutEvents.push(timeObj)
     return obj
