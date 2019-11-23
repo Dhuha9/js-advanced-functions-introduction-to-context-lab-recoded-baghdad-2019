@@ -71,7 +71,7 @@ function createEmployeeRecords(arrayOfArray){
     return arrayOfObj
 }
 
- function findEmployeebyFirstName(srcArray,firstName){
+ function findEmployeeByFirstName(srcArray,firstName){
  
     for(let i=0;i<srcArray.length;i++){
        if(srcArray[i].firstName===firstName){
