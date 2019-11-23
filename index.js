@@ -81,7 +81,7 @@ function createEmployeeRecords(arrayOfArray){
  }
 
  function calculatePayroll(arrayOfEmployee){
-    let allPayOwed=0
+    let allPayOwed=allPayedToEmployee=0
     let payroll=0
     for(let i=0;i<arrayOfEmployee.length;i++){
         allPayOwed=0
