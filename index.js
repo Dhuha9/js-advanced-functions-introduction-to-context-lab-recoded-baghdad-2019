@@ -20,7 +20,7 @@ function createEmployees(arr) {
 }
 
 function createTimeInEvent(obj, dateStamp) {
-    date = dateStamp.split(" ")
+   let date = dateStamp.split(" ")
     timeObj = {
         type: "TimeIn"
         , date: date[0]
