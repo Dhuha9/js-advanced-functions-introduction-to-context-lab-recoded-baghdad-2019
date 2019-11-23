@@ -42,11 +42,13 @@ function createTimeOutEvent(obj, dateStamp) {
 }
 
 function hoursWorkedOnDate(obj, date) {
+    let hours=0;
     for (let i = 0; i < obj.timeInEvents.length; i++) {
         if (obj.timeInEvents[i].date == date && obj.timeOutEvents[i].date == date) {
-            return parseInt(obj.timeOutEvents[i].hour.slice(0,2)) - parseInt(obj.timeInEvents[i].hour.slice(0,2))
+            hours= parseInt(obj.timeOutEvents[i].hour.slice(0,2)) - parseInt(obj.timeInEvents[i].hour.slice(0,2))
         }
     }
+    return hours;
 }
 
 
